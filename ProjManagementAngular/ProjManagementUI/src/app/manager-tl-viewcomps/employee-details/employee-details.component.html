@@ -1,0 +1,13 @@
+<div class="project-info">
+    <h2>Employee Details</h2>
+    <p><strong>Employee Name:</strong> {{ employeeDetailsObj.employeeUserName || 'N/A' }}</p>
+    
+    <div *ngIf="employeeDetailsObj.workingTaskName || employeeDetailsObj.workingProjectName" class="project-container">
+      <h4>Working Task</h4>
+      <p>{{ employeeDetailsObj.workingTaskName || 'Not assigned' }}</p>
+      
+      <h4>Working Project</h4>
+      <p>{{ employeeDetailsObj.workingProjectName || 'Not assigned' }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Task</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-form">
+      <h2>Post Task</h2>
+      <mat-spinner class="matspinner" style="color: white; margin: 0 40% 0 2%;"
+        *ngIf="isLoadingToRetriveData"></mat-spinner>
+      <br>
+      <form (ngSubmit)="onSubmit()" #taskForm="ngForm" class="task-form" autocomplete="off">
+        <div class="form-group">
+          <label for="taskName">Task Name : </label>
+          <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Enter Task Name</mat-label>
+            <input matInput type="text" id="taskName" class="borderchnage" [(ngModel)]="taskName" required
+              name="taskName" aria-label="Task Name" placeholder="Enter Task Name">
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="taskStatus">Task Status : </label>
+          <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Enter Task Status</mat-label>
+            <input matInput type="number" id="taskStatus" [(ngModel)]="taskStatus" name="taskStatus"
+              aria-label="Task Status" placeholder="Enter Task Status" required />
+          </mat-form-field>
+        </div>
+
+          <div class="form-group">
+            <label for="dueDate">Due Date : </label>
+            <mat-form-field appearance="outline" class="mat-form-field">
+              <mat-label>Enter Due Date</mat-label>
+              <input matInput [matDatepicker]="picker" [(ngModel)]="dueDate" name="dueDate" required aria-label="Due Date"
+                placeholder="Enter Due Date">
+              <mat-hint>DD/MM/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+        <div class="form-group">
+          <label for="projectSelect">Select Project : </label>
+          <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label>Select Project</mat-label>
+            <input type="text" id="projectSelect" matInput placeholder="Select Project" [(ngModel)]="projName" required
+              aria-label="Select a Project" name="projectSelect" [matAutocomplete]="projectAuto">
+            <mat-autocomplete #projectAuto="matAutocomplete" (optionSelected)="onProjectChange($event)">
+              <mat-option *ngFor="let project of projects" [value]="project.name">
+                {{ project.name }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <label for="employeeSelect">Select Employee : </label>
+          <mat-form-field appearance="outline" class="mat-form-field borderchnage">
+            <mat-label>Select Employee</mat-label>
+            <input type="text" id="employeeSelect" required matInput placeholder="Select Employee" [(ngModel)]="empName"
+              aria-label="Select an Employee" name="employeeSelect" [matAutocomplete]="employeeAuto">
+            <mat-autocomplete #employeeAuto="matAutocomplete" (optionSelected)="onEmployeeChange($event)">
+              <mat-option *ngFor="let employee of nonWorkingEmployees" [value]="employee.employeeName">
+                {{ employee.employeeName }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+
+        <button type="submit" class="submit-button" [disabled]="isLoadingToSubmitForm">
+          <ng-container *ngIf="!isLoadingToSubmitForm">Submit</ng-container>
+          <ng-container *ngIf="isLoadingToSubmitForm">
+            <mat-spinner  class="matspinner" diameter="40"></mat-spinner>
+          </ng-container>
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\teamleaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\teamleaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\managerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\managerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\repository\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\repository\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\dto\\tasksresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\dto\\tasksresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\context\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\context\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\iteamleaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\iteamleaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\teamleadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\teamleadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\dto\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\dto\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\dto\\tlresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\dto\\tlresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\dto\\returnwarningmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\dto\\returnwarningmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\services\\imanagerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\services\\imanagerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\controllers\\jwttokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\controllers\\jwttokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\model\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\model\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\dto\\usertoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\dto\\usertoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\model\\teamleader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\model\\teamleader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\model\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\model\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\domain\\model\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\domain\\model\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\context\\mysqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\context\\mysqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\projectmanagementtool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\projectmanagementtool.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|c:\\users\\kowshik.g\\source\\repos\\teamtracker.net-webapi\u0027s\\projectmanagementtool\\projectmanagementtool\\projectmanagementtool.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2AF61C27-D9B8-4FBF-ABE9-10A151374AAF}|ProjectManagementTool\\ProjectManagementTool.csproj|solutionrelative:projectmanagementtool\\projectmanagementtool.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\ManagerRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\ManagerRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\ManagerRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\ManagerRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:20:43.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\ProjectRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\ProjectRepository.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAhwLAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:32:06.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamLeaderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\TeamLeaderRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\TeamLeaderRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\TeamLeaderRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\TeamLeaderRepository.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAswFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:33:55.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:23:09.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\TaskRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\TaskRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\TaskRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\TaskRepository.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAswK4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:34:31.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAhwD0AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:59:34.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthenticationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\AuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Repository\\AuthenticationRepository.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Repository\\AuthenticationRepository.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Repository\\AuthenticationRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T11:52:34.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAAADIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:22:45.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostgresContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Context\\PostgresContext.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Context\\PostgresContext.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Context\\PostgresContext.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Context\\PostgresContext.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvykAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T04:25:15.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TasksResp.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\TasksResp.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\DTO\\TasksResp.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\TasksResp.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\DTO\\TasksResp.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA0wCEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T03:44:38.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IProjectService.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\IProjectService.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IProjectService.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\IProjectService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwAkAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:24:04.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITaskService.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\ITaskService.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\ITaskService.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\ITaskService.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\ITaskService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T03:24:21.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\EmployeeResponse.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\DTO\\EmployeeResponse.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\EmployeeResponse.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\DTO\\EmployeeResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T02:35:24.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TeamLeaderController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\TeamLeaderController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\TeamLeaderController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\TeamLeaderController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\TeamLeaderController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAowDIAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:28:08.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITeamLeaderService.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\ITeamLeaderService.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\ITeamLeaderService.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\ITeamLeaderService.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\ITeamLeaderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:30:49.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TLResp.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\TLResp.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\DTO\\TLResp.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\TLResp.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\DTO\\TLResp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T03:44:59.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAuthenticationServices.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IAuthenticationServices.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\IAuthenticationServices.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IAuthenticationServices.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\IAuthenticationServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T11:51:50.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReturnWarningMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\ReturnWarningMessage.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\DTO\\ReturnWarningMessage.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\ReturnWarningMessage.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\DTO\\ReturnWarningMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:30:44.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\ManagerController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:19:53.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T07:11:27.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\IEmployeeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T07:09:33.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IManagerServices.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IManagerServices.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Services\\IManagerServices.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Services\\IManagerServices.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Services\\IManagerServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:20:16.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JWTTokenController.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\JWTTokenController.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Controllers\\JWTTokenController.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Controllers\\JWTTokenController.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Controllers\\JWTTokenController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T11:50:46.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Manager.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Model\\Manager.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Manager.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Model\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:04:05.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserToken.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\UserToken.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\DTO\\UserToken.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\DTO\\UserToken.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\DTO\\UserToken.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T04:15:58.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Program.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Program.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Program.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAADkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:31:55.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Employee.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Model\\Employee.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Employee.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Model\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:09:39.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TeamLeader.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\TeamLeader.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Model\\TeamLeader.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\TeamLeader.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Model\\TeamLeader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:08:20.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Project.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Model\\Project.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Project.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Model\\Project.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA3wA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:12:13.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Tasks.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Domain\\Model\\Tasks.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Domain\\Model\\Tasks.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Domain\\Model\\Tasks.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswBAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:17:52.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\appsettings.json",
+              "RelativeToolTip": "ProjectManagementTool\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-13T08:51:53.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240825023023_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Migrations\\20240825023023_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T02:30:23.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MySqlDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Context\\MySqlDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Context\\MySqlDbContext.cs",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Context\\MySqlDbContext.cs",
+              "RelativeToolTip": "ProjectManagementTool\\Context\\MySqlDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T08:53:36.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ProjectManagementTool.csproj",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\ProjectManagementTool.csproj",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\ProjectManagementTool.csproj",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\ProjectManagementTool.csproj",
+              "RelativeToolTip": "ProjectManagementTool\\ProjectManagementTool.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-25T08:53:22.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProjectManagementTool\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwCcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-16T08:56:42.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ProjectManagementTool",
+              "DocumentMoniker": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\ProjectManagementTool.csproj",
+              "RelativeDocumentMoniker": "ProjectManagementTool\\ProjectManagementTool.csproj",
+              "ToolTip": "C:\\Users\\Kowshik.G\\source\\repos\\TeamTracker.NET-WebAPI\u0027s\\ProjectManagementTool\\ProjectManagementTool\\ProjectManagementTool.csproj",
+              "RelativeToolTip": "ProjectManagementTool\\ProjectManagementTool.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-25T08:51:56.741Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

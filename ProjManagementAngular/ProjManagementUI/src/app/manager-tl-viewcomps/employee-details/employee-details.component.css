@@ -1,0 +1,66 @@
+.project-info {
+    padding: 20px;
+  }
+  
+  .project-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #296fcb;
+  }
+  
+  @media (max-width: 900px) {
+    .project-info {
+      padding: 12px;
+    }
+    
+    .project-container {
+      padding: 8px;
+    }
+  
+    .project-container h4 {
+      font-size: 1.2em;
+    }
+  
+    .project-container p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-info {
+      padding: 8px;
+    }
+    
+    .project-container {
+      padding: 6px;
+    }
+  
+    .project-container h4 {
+      font-size: 1em;
+    }
+  
+    .project-container p {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .project-info {
+      padding: 4px;
+    }
+    
+    .project-container {
+      padding: 4px;
+    }
+  
+    .project-container h4 {
+      font-size: 0.8em;
+    }
+  
+    .project-container p {
+      font-size: 0.7em;
+    }
+  }
+  

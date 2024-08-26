@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Task</title>
+</head>
+<body>
+    <div class="main-form">
+      <div class="task-display">
+        <h3>Task For you :  </h3>
+        <h4>{{ taskName }}  Assigned by {{tasks[0].createdTL}}</h4>
+      </div><hr>
+      <h2>Report Task</h2>
+      <form (ngSubmit)="onSubmit()" id="task-form" autocomplete="off">
+        <div class="form-group">
+          <label for="task-select">Select Task:</label>
+          <input type="text" matInput placeholder="Select a Task" [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onTaskChange($event)">
+            <mat-option *ngFor="let task of tasks" [value]="task.taskName">
+              {{  task.taskName  }}
+            </mat-option>
+          </mat-autocomplete>
+          <!-- <select id="task-select" [(ngModel)]="selectedTaskId" name="taskId" (change)="onTaskChange($event)" style="width: 40%;" required>
+            <option *ngFor="let task of tasks" [value]="task.taskId">{{ task.taskName }}</option>
+          </select> -->
+        </div>
+
+        <button type="submit" [disabled]="isLoadingToSubmitForm">
+          <ng-container *ngIf="!isLoadingToSubmitForm">Submit</ng-container>
+          <ng-container *ngIf="isLoadingToSubmitForm">
+            <mat-spinner  class="matspinner" diameter="40"></mat-spinner>
+          </ng-container>
+        </button>
+
+      </form>
+  </div>
+</body>
+</html>

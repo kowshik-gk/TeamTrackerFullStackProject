@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* :root{
+    --snackBarColor: green !important;
+}
+.mat-mdc-snack-bar-label{
+    background: var(--snackBarColor);
+  }    */
+
+
+/* .mat-mdc-snack-bar-container 
+  {
+      --mdc-snackbar-container-color: #2196f3;
+      --mat-mdc-snack-bar-button-color: #fff;
+      --mdc-snackbar-supporting-text-color: #fff;
+    
+  } */
+
+.mat-mdc-snack-bar-container {
+  &.warning-snackbar {
+    --mdc-snackbar-container-color: rgb(241, 132, 69);
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+  }
+}
+
+.mat-mdc-snack-bar-container {
+  &.error-snackbar {
+    --mdc-snackbar-container-color: rgb(246, 107, 107);
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+  }
+}
+
+
+.mat-mdc-snack-bar-container {
+  &.success-snackbar {
+    --mdc-snackbar-container-color: rgb(9, 183, 9);
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+  }
+}
+
+
+.mat-tab-group {
+  background-color: white;
+}
+
+.mat-tab-header {
+  background-color: white;
+}
+
+.mat-tab-label {
+  color: black;
+}
+
+.mat-spinner circle {
+  stroke: white !important;
+}
+
+
+
+
+.mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 10px !important;
+}
+
+.mdc-text-field--outlined {
+  .mat-mdc-form-field-flex {
+    .mdc-notched-outline {
+      height: 65px;
+      padding-top: 10px;
+      border-radius: 18px; /* Apply border radius here */
+    }
+
+    .mdc-notched-outline--no-label {
+      height: 50px;
+      padding-top: 10px;
+      border-radius: 18px; /* Apply border radius here */
+    }
+  }
+}
+
+mat-form-field .mdc-text-field--focused .mdc-notched-outline > * {
+  border-width: 3px !important;
+  //border-color: red !important;
+}
+
+
+div[role="tab"]{
+  font-size: 1.5rem !important;
+}
+.mat-mdc-input-element {
+  color:blue;
+}
+
+.mdc-notched-outline mdc-notched-outline--upgraded{
+  border-color: green;
+}
+
+.mat-badge-content .mat-badge-active{
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+}
+
+// _ngcontent-ng-c1082794181="" id="mat-badge-content-0" aria-hidden="true" class="mat-badge-content mat-badge-active" style="padding:20px">4</span>
+
+#mat--badge-content-0{
+  padding: 20px;
+}
+
+.mat-badge sidebar-item mat-badge-overlap mat-badge-above mat-badge-after{
+  padding: 20px;
+}

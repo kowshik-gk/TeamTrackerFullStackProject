@@ -1,0 +1,76 @@
+<div class="dialog-content">
+  <!-- Project Information (Displayed only for team leaders) -->
+  <div *ngIf="reversedProjects.length > 0" class="project-info">
+    <h2>Project Details</h2>
+    <div class="info-table">
+      <div *ngFor="let project of reversedProjects" class="info-row2">
+        <div class="info-row">
+        <div class="info-label"><strong>Project Name:</strong></div>
+        <div class="info-value">{{ project.name }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Description:</strong></div>
+          <div class="info-value">{{ project.description }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Number of Tasks:</strong></div>
+          <div class="info-value">{{ project.numberOfTasks }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Completed Tasks:</strong></div>
+          <div class="info-value">{{ project.completedTasks }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Due Date:</strong></div>
+          <div class="info-value">{{ project.dueDate | date }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Assigned Team Leader:</strong></div>
+          <div class="info-value">{{ project.assignedTeamLeader }}</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label"><strong>Created By Manager:</strong></div>
+          <div class="info-value">{{ project.createdManager }}</div>
+        </div>
+
+        <hr />
+      </div>
+    </div>
+    <div *ngIf="reversedProjects.length === 0">
+      <p>No projects available.</p>
+    </div>
+  </div>
+
+  <!-- Task Information (Displayed only for employees) -->
+  <div *ngIf="userRole === 'employee'" class="info-row-container">
+    <h2>Task Details</h2>
+    <div *ngIf="tasks.length > 0" class="info-table">
+      <div *ngFor="let task of tasks" class="task-row">
+        <!-- <div class="info-row">
+          <div class="info-label"><strong>Task ID:</strong></div>
+          <div class="info-value">{{ task.taskId }}</div>
+        </div> -->
+        <div class="info-row">
+          <div class="info-label"><strong>Task Name:</strong></div>
+          <div class="info-value">{{ task.taskName }}</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label"><strong>Created Team Leader:</strong></div>
+          <div class="info-value">{{ task.createdTL }}</div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div *ngIf="tasks.length === 0">
+      <p>No tasks assigned.</p>
+    </div>
+  </div>
+  
+  <button class="dialog-close" mat-button (click)="onClose()">Close</button>
+</div>

@@ -1,0 +1,222 @@
+  .main-form {
+    width: 95%;
+    background-color: white;
+    padding: 3% 4%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(50, 49, 49, 0.2), 0 -10px 20px rgba(72, 70, 70, 0.2), 10px 0 20px rgba(59, 58, 58, 0.2), -10px 0 20px rgba(72, 69, 69, 0.2);
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      color: rgb(58, 58, 58);
+      margin-bottom: 0;
+      margin-left: 5%;
+      font-size: 14px;
+      flex-basis: 30%;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 70%;
+      padding: 1%;
+      font-size: 14px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .action-icon {
+      margin: 0 8px;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    .input-container {
+      position: relative;
+      width: 100%;
+  }
+  
+  .input-container input {
+      width: 91% ;
+      padding-right: 40px; /* Add padding to make space for the icon */
+  }
+  
+  .datepicker-icon {
+      position: absolute;
+      right: 10px; /* Position the icon inside the input field */
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+  }
+  
+
+    .add-description {
+      /* border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 1% 10%; */
+
+
+      width: 70%;
+      padding: 1%;
+      font-size: 14px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: white;
+      background-color:#048820 ;
+
+
+    }
+
+    button.add-description:hover {
+      background-color: #058822;
+    }
+
+    button.remove-description {
+      background-color: #dc3545;
+    }
+
+    button.remove-description:hover {
+      background-color: #c82333;
+    }
+
+    button[type="submit"] {
+      background-color: #6aabf0;
+      border-radius: 10px;
+      border: 1px solid rgb(47, 119, 226);
+      color: #141a20;
+      width: 95%;
+      padding: 1%;
+      font-weight: bold;
+      margin: 1% 5%;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #68aaf1;
+    }
+
+    .form-array-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .form-array-item input {
+      width: 70%;
+      /* Adjust input width */
+      padding: 1%;
+      /* Reduced padding */
+      font-size: 14px;
+      /* Reduced font size */
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .matspinner {
+      margin-left: 45%;
+    }
+
+    .input-container {
+      position: relative;
+      /* Allows positioning of the delete icon inside */
+      width: 100%;
+    }
+
+    .input-container input {
+      padding: 10px;
+      margin-left: 9%;
+    }
+
+    .input-container .action-icon {
+      position: absolute;
+      top: 50%;
+      right: 23%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+
+    .input-container .action-icon:hover {
+      opacity: 1;
+    }
+
+
+    @media (max-width: 750px) {
+      .main-form {
+        padding: 3%;
+        width: 100%;
+      }
+
+      button.add-description,
+      button.remove-description,
+      button[type="submit"] {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+
+      .form-group label {
+        font-size: 12px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="number"],
+      .form-group input[type="date"] {
+        font-size: 12px;
+      }
+
+      .action-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main-form {
+        padding: 3%;
+        width: 100%;
+      }
+
+      button.add-description,
+      button.remove-description,
+      button[type="submit"] {
+        font-size: 10px;
+        /* Further reduced font size */
+        padding: 4px 10px;
+        /* Further reduced padding */
+      }
+
+
+      .form-group label {
+        font-size: 7px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="number"],
+      .form-group input[type="date"] {
+        font-size: 7px;
+      }
+    }

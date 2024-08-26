@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-Welcome">
+      <div class="heading-with-icon">
+        <img src="/assets/team-tracker-icon.png" alt="TT-icon" />
+        <h1>Welcome To TeamTracker</h1>
+      </div>
+
+      <p>Build, Manage, Monitor, Projects, Tasks Assigned</p>
+      <img src="/assets/home-image.png" alt="home-image" class="home-image" />
+      <p>Objective: This tool helps managers assign projects to team leads, who then allocate tasks to employees. Each
+        role can also respond to and track progress on their assignments.</p>
+    </div>
+
+    <div class="login-tabs">
+      <mat-tab-group style="width: 100%;">
+        <mat-tab label="LogIn">
+          <div class="main-form">
+            <h2>Login</h2>
+            <p>Enter Credentials Given By Admin</p>
+            <form [formGroup]="loginForm" (ngSubmit)="handleUserLogin()" id="login-form" autocomplete="off">
+              <div class="main-form-grid">
+                <div class="form-group">
+                  <img class="input-image" src="/assets/username-icon.png" alt="Username Icon" />
+                  <input
+                    type="text"
+                    id="name"
+                    formControlName="userNameForLogin"
+                    placeholder="Username"
+                    (ngModelChange)="validateField('userNameForLogin', $event)"
+                  />
+                  <div class="warning-container" *ngIf="validationErrors['userNameForLogin'] && validationErrors['userNameForLogin'].length > 0">
+                    <!-- Updated warning icon -->
+                    <img class="warning-icon" src="/assets/red-warning-icon.png" alt="Warning Icon" />
+                    <span class="error-message">{{ validationErrors['userNameForLogin'] }}</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <img class="input-image" src="/assets/password-icon.png" alt="Password Icon" />
+                  <input
+                    type="password"
+                    id="password"
+                    formControlName="passwordForLogin"
+                    placeholder="Password"
+                    (ngModelChange)="validateField('passwordForLogin', $event)"
+                  />
+                  <div class="warning-container" *ngIf="validationErrors['passwordForLogin'] && validationErrors['passwordForLogin'].length > 0">
+                    <!-- Updated warning icon -->
+                    <img class="warning-icon" src="/assets/red-warning-icon.png" alt="Warning Icon" />
+                    <span class="error-message">{{ validationErrors['passwordForLogin'] }}</span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" [disabled]="isLoadingSpinner">
+                <ng-container *ngIf="!isLoadingSpinner">Login</ng-container>
+                <ng-container *ngIf="isLoadingSpinner">
+                  <mat-spinner diameter="40"></mat-spinner>
+                </ng-container>
+              </button>
+            </form>
+          </div>
+        </mat-tab>
+        <mat-tab label="SignUp">
+          <div class="main-form">
+            <h2>Sign Up as <span id="role-label">{{ currentRole }}</span></h2>
+            <form [formGroup]="signUpForm" (ngSubmit)="handleSignUp()" id="signup-form" autocomplete="off">
+              <div class="main-form-grid">
+                <div class="form-group">
+                  <img class="input-image" src="/assets/username-icon.png" alt="Username Icon" />
+                  <input
+                    type="text"
+                    id="name"
+                    formControlName="userName"
+                    placeholder="Username"
+                    (ngModelChange)="validateField('userName', $event)"
+                  />
+                  <div class="warning-container" *ngIf="validationErrors['userName'] && validationErrors['userName'].length > 0">
+                    <!-- Updated warning icon -->
+                    <img class="warning-icon" src="/assets/red-warning-icon.png" alt="Warning Icon" />
+                    <span class="error-message">{{ validationErrors['userName'] }}</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <img class="input-image" src="/assets/password-icon.png" alt="Password Icon" />
+                  <input
+                    type="password"
+                    id="password"
+                    formControlName="password"
+                    placeholder="Password"
+                    (ngModelChange)="validateField('password', $event)"
+                  />
+                  <div class="warning-container" *ngIf="validationErrors['password'] && validationErrors['password'].length > 0">
+                    <!-- Updated warning icon -->
+                    <img class="warning-icon" src="/assets/red-warning-icon.png" alt="Warning Icon" />
+                    <span class="error-message">{{ validationErrors['password'] }}</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <img class="input-image" src="/assets/password-icon.png" alt="Confirm Password Icon" />
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    formControlName="confirmPassword"
+                    placeholder="Confirm Password"
+                    (ngModelChange)="validateField('confirmPassword', $event)"
+                  />
+                  <div class="warning-container" *ngIf="validationErrors['confirmPassword'] && validationErrors['confirmPassword'].length > 0">
+                    <!-- Updated warning icon -->
+                    <img class="warning-icon" src="/assets/red-warning-icon.png" alt="Warning Icon" />
+                    <span class="error-message">{{ validationErrors['confirmPassword'] }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="togglebutton">
+                  <mat-button-toggle value="manager" (click)="setRole('Manager')">Manager</mat-button-toggle>
+                  <mat-button-toggle value="teamleader" (click)="setRole('Teamleader')">TeamLead</mat-button-toggle>
+                  <mat-button-toggle value="employee" (click)="setRole('Employee')">Employee</mat-button-toggle>
+                </mat-button-toggle-group>
+              </div>
+              <button type="submit" [disabled]="isLoadingSpinner">
+                <ng-container *ngIf="!isLoadingSpinner">Sign Up</ng-container>
+                <ng-container *ngIf="isLoadingSpinner">
+                  <mat-spinner diameter="40"></mat-spinner>
+                </ng-container>
+              </button>
+            </form>
+          </div>
+        </mat-tab>
+      </mat-tab-group>    
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+  <!-- <mat-tab label="Overview">
+            <div class="matstepper-container">
+              <mat-stepper orientation="vertical" #stepper style="width: 100%; background-color: #003366; color: #FFD700;">
+                <mat-step [stepControl]="assignProjectFormGroup">
+                  <form [formGroup]="assignProjectFormGroup" style="width: 100%; background-color: #003366; color: #FFD700; margin: 2%;">
+                    <ng-template matStepLabel>Manager Will Assign Project</ng-template>
+                    <mat-form-field style="width: 50%; margin: 2%;">
+                      <mat-label>Project Name</mat-label>
+                      <input matInput placeholder="Enter project name" formControlName="projectName" required>
+                    </mat-form-field>
+                    <mat-form-field style="width: 50%; margin: 2%;">
+                      <mat-label>Assign to TeamLead</mat-label>
+                      <input matInput placeholder="Enter TeamLead name" formControlName="teamLeadName" required>
+                    </mat-form-field>
+                    <div>
+                      <button mat-button matStepperNext>Next</button>
+                    </div>
+                  </form>
+                </mat-step>
+
+                <mat-step [stepControl]="assignTaskFormGroup">
+                  <form [formGroup]="assignTaskFormGroup">
+                    <ng-template matStepLabel>TL will Assign Task</ng-template>
+                    <mat-form-field style="width: 50%; margin: 2%;">
+                      <mat-label>Task Description</mat-label>
+                      <input matInput placeholder="Enter task description" formControlName="taskDescription" required>
+                    </mat-form-field>
+                    <mat-form-field style="width: 50%; margin: 2%;">
+                      <mat-label>Assign to Employee</mat-label>
+                      <input matInput placeholder="Enter employee name" formControlName="employeeName" required>
+                    </mat-form-field>
+                    <div>
+                      <button mat-button matStepperPrevious>Back</button>
+                      <button mat-button matStepperNext>Next</button>
+                    </div>
+                  </form>
+                </mat-step>
+
+                <mat-step>
+                  <ng-template matStepLabel>Employee will Complete Task</ng-template>
+                  <mat-form-field style="width: 50%; margin: 2%; color: #FFD700;">
+                    <mat-label>Task Completion</mat-label>
+                    <input matInput placeholder="Enter Task Name" formControlName="TaskName" required>
+                  </mat-form-field>
+                  <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="stepper.reset()">Reset</button>
+                  </div>
+                </mat-step>
+              </mat-stepper>
+            </div>
+          </mat-tab> -->

@@ -1,0 +1,106 @@
+<div class="dialog-content">
+    <h2>Edit {{ dataType | titlecase }}</h2>
+  
+    <!-- Template for Editing Projects -->
+    <div *ngIf="dataType === 'project'">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.name">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="data.description"></textarea>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Number of Tasks</mat-label>
+        <input matInput type="number" [(ngModel)]="data.numberOfTasks">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Completed Tasks</mat-label>
+        <input matInput type="number" [(ngModel)]="data.completedTasks">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Assigned Team Leader</mat-label>
+        <input matInput [(ngModel)]="data.assignedTeamLeader">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Created Manager</mat-label>
+        <input matInput [(ngModel)]="data.createdManager">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Due Date</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="data.dueDate">
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  
+    <!-- Template for Editing Employees -->
+    <div *ngIf="dataType === 'employee'">
+      <mat-form-field appearance="outline">
+        <mat-label>Employee Name</mat-label>
+        <input matInput [(ngModel)]="data.employeeName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Task ID</mat-label>
+        <input matInput type="number" [(ngModel)]="data.taskId">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Task Name</mat-label>
+        <input matInput [(ngModel)]="data.taskName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Project Name</mat-label>
+        <input matInput [(ngModel)]="data.projectName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Project ID</mat-label>
+        <input matInput type="number" [(ngModel)]="data.projectId">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Due Date</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="data.dueDate">
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Created TL</mat-label>
+        <input matInput [(ngModel)]="data.createdTL">
+      </mat-form-field>
+    </div>
+  
+    <!-- Template for Editing Team Leads -->
+    <div *ngIf="dataType === 'teamLead'">
+      <mat-form-field appearance="outline">
+        <mat-label>Team Lead Name</mat-label>
+        <input matInput [(ngModel)]="data.tlName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Project Name</mat-label>
+        <input matInput [(ngModel)]="data.projectName">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Assigned Manager</mat-label>
+        <input matInput [(ngModel)]="data.assignedManager">
+      </mat-form-field>
+    </div>
+  
+    <!-- Save and Cancel buttons -->
+    <div class="dialog-actions">
+      <button  (click)="onSave()">Save</button>
+      <button  (click)="onCancel()">Cancel</button>
+    </div>
+  </div>
+  

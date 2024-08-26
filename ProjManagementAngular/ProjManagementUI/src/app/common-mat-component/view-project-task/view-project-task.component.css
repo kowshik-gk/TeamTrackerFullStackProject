@@ -1,0 +1,74 @@
+/* General Styling */
+.dialog-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 5%;
+    border-radius: 5px;
+    max-height: 50vh; /* Set maximum height to half of the viewport height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+}
+
+.dialog-close {
+    position: sticky;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #32485f;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+.info-label {
+    font-weight: bold;
+    flex:1; 
+}
+
+.info-value {
+    flex: 1; 
+}
+
+
+/* Adjustments for small screens */
+@media (max-width: 450px) {
+    .dialog-content {
+        padding: 10px;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        max-height: 70vh;
+        height: 90%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .info-table,
+    .task-table {
+        gap: 10px;
+    }
+
+    .info-row,
+    .task-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .info-label,
+    .info-value {
+        min-width: 100%;
+        display: block;
+    }
+}

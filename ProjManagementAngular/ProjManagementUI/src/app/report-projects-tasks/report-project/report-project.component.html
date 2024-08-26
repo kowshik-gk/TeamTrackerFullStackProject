@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Project</title>
+  <link rel="stylesheet" href="./report-project.component.css"> <!-- Link to the updated CSS -->
+</head>
+
+<body>
+  <div class="main-form">
+    <h2>Report Project</h2>
+    <mat-spinner class="matspinner" *ngIf="isLoadingToRetriveData" style="margin-left: 40% ;"></mat-spinner>
+
+    <form (ngSubmit)="onSubmit()" id="task-form" autocomplete="off">
+
+      <div class="form-group">
+        <label>Project:</label>
+        <mat-form-field appearance="outline" class="mat-form-field">
+          <mat-label>Select a Project</mat-label>
+          <input type="text" matInput placeholder="Select a Project" [matAutocomplete]="auto"
+            aria-label="Select a Project">
+          <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onProjectChange($event)">
+            <mat-option *ngFor="let project of projects" value="{{project.name}}">
+              {{ project.name }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+
+      <!-- <mat-spinner class="matspinner" *ngIf="isLoadingToSubmitForm" style="margin-left: 50% ;"></mat-spinner>
+      <br>
+      <button type="submit">Submit</button> -->
+
+      
+      <button type="submit" class="submit-button" [disabled]="isLoadingToSubmitForm">
+        <ng-container *ngIf="!isLoadingToSubmitForm">Submit</ng-container>
+        <ng-container *ngIf="isLoadingToSubmitForm">
+          <mat-spinner  class="matspinner" diameter="40"></mat-spinner>
+        </ng-container>
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>

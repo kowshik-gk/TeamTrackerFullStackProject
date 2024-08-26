@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo-with-header">
+      <img src="/assets/white-team-tracker-icon.png" alt="Team Tracker Logo" class="header-logo">
+      <h1 class="header-title">TeamTracker</h1>
+    </div>
+
+    <div class="header-profile">
+      <img src="/assets/profile-image.png" (click)="viewProfile()" alt="Profile Image" class="header-profile-image">
+      <span class="header-username" (click)="viewProfile()">{{employeeName}}</span>
+      <div class="logout-items" (click)="logout()" [routerLink]="['/logout']" routerLinkActive="active-tab"
+        [ngClass]="{'active-link': activeLink === '/logout'}">
+        <img [src]="activeLink === '/logout' ? '/assets/blue-logout-icon.png' : '/assets/white-logout-icon.png'"
+          alt="Logout" class="sidebar-icon">
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <h2>Hello : {{employeeName}}!</h2>
+      <img src="/assets/profile-image.png" (click)="viewProfile()" alt="Profile Image" class="profile-image" />
+      <p>Click img to ViewProfile</p><br>
+
+      <div class="sidebar-item" [routerLink]="['/employee-dashboard/report-task']" routerLinkActive="active-tab"
+        [ngClass]="{'active-link': activeLink === '/employee-dashboard/report-task'}">
+        <img
+          [src]="activeLink === '/employee-dashboard/report-task' ? '/assets/blue-report-icon.png' : '/assets/white-report-icon.png'"
+          alt="Report Task Completion" class="sidebar-icon">
+        <span>Report Task</span>
+      </div>
+
+      <div class="sidebar-item" mat-raised-button matBadge="{{tasks.length}}" [matBadgeHidden]="BadgeHiddenForNewTask"
+        matBadgeSize="large" routerLinkActive="active-tab" (click)="viewPendingProject()">
+        <img
+          [src]="activeLink === '/employee-dashboard/view-pending-project' ? '/assets/blue-new-icon.png' : '/assets/white-new-icon.png'"
+          alt="New Task" class="sidebar-icon">
+        <span>New Task</span>
+      </div>
+
+      <div class="sidebar-item" [routerLink]="['/employee-dashboard/view-projects']" routerLinkActive="active-tab"
+        [ngClass]="{'active-link': activeLink === '/employee-dashboard/view-projects'}">
+        <img
+          [src]="activeLink === '/employee-dashboard/view-projects' ? '/assets/blue-view-icon.png' : '/assets/white-view-icon.png'"
+          alt="View Projects" class="sidebar-icon">
+        <span>View</span>
+      </div>
+
+      <div class="sidebar-item" (click)="logout()" [routerLink]="['/logout']" routerLinkActive="active-tab"
+        [ngClass]="{'active-link': activeLink === '/logout'}">
+        <img [src]="activeLink === '/logout' ? '/assets/blue-logout-icon.png' : '/assets/white-logout-icon.png'"
+          alt="Logout" class="sidebar-icon">
+        <span>Logout</span>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>Employee Dashboard</h2>
+      <router-outlet class="child-container"></router-outlet>
+    </div>
+  </div>
+
+</body>
+
+</html>

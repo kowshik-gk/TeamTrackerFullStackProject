@@ -1,0 +1,74 @@
+<div class="project-info">
+  <h2>Tasks You Were Assigned To Employee's</h2>
+
+  <mat-spinner class="matspinner" *ngIf="isLoading" style="margin-left: 40%;"></mat-spinner>
+  
+  <!-- Pending Tasks Section -->
+  <div *ngIf="pendingTasks.length > 0">
+    <h3 style="color:red;">Pending Tasks</h3>
+    <div class="project-list">
+      <div class="project-container" *ngFor="let task of pendingTasks">
+        <h4 class="task-name" style="color:red;">{{ task.taskName }}</h4>
+        <div class="task-details">
+          <div class="detail">
+            <strong>Assigned To (Employee):</strong>
+            <span>{{ task.employeeName }}</span>
+          </div>
+          <div class="detail">
+            <strong>Task Name:</strong>
+            <span>{{ task.taskName }}</span>
+          </div>
+          <div class="detail">
+            <strong>Status:</strong>
+            <span>Not Completed</span>
+          </div>
+          <div class="detail">
+            <strong>Due Date:</strong>
+            <span>{{ task.dueDate }}</span>
+          </div>
+          <div class="detail">
+            <strong>Project Name:</strong>
+            <span>{{ task.projectName }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Completed Tasks Section -->
+  <div *ngIf="completedTasks.length > 0">
+    <h3 style="color:green;">Completed Tasks</h3>
+    <div class="project-list">
+      <div class="project-container" *ngFor="let task of completedTasks">
+        <h4 class="task-name" style="color:green;">{{ task.taskName }}</h4>
+        <div class="task-details">
+          <div class="detail">
+            <strong>Assigned To (Employee):</strong>
+            <span>{{ task.employeeName }}</span>
+          </div>
+          <div class="detail">
+            <strong>Task Name:</strong>
+            <span>{{ task.taskName }}</span>
+          </div>
+          <div class="detail">
+            <strong>Status:</strong>
+            <span>Completed</span>
+          </div>
+          <div class="detail">
+            <strong>Due Date:</strong>
+            <span>{{ task.dueDate }}</span>
+          </div>
+          <div class="detail">
+            <strong>Project Name:</strong>
+            <span>{{ task.projectName }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Tasks Available Section -->
+  <ng-template #noTasks>
+    <p>No tasks available.</p>
+  </ng-template>
+</div>

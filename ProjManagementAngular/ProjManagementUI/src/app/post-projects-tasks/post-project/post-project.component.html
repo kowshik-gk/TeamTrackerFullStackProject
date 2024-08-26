@@ -1,0 +1,72 @@
+  <div class="main-form">
+    <h2>Post Project</h2>
+
+    <mat-spinner class="matspinner" *ngIf="isLoadingForRetriveData"></mat-spinner>
+
+    <form [formGroup]="managerForm" id="registration-form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Project Name:</label>
+        <input type="text" id="name" formControlName="name" placeholder="Enter project name" required  autocomplete="off"/>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" id="description" formControlName="description" placeholder="Enter description" autocomplete="off" required />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Add Description:</label>
+        <button type="button" (click)="addDescription()" class="add-description">Add</button>
+      </div>
+
+      <div class="form-group" formArrayName="descriptions" *ngFor="let description of descriptions.controls; let i = index">
+        <label for="description-{{i}}">Description {{i + 1}}:</label>
+        <div class="input-container">
+          <input type="text" [formControlName]="i" placeholder="Enter description" autocomplete="off" required>
+          <img src="assets/delete-icon.png" class="action-icon" (click)="removeDescription(i)" alt="Delete Icon">
+        </div>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="nooftask">Number of Tasks:</label>
+        <input type="number" id="nooftask" formControlName="nooftask" placeholder="Enter number of tasks" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="completedTask">Completed Tasks:</label>
+        <input type="number" id="completedTask" formControlName="completedTask" autocomplete="off" placeholder="Enter completed tasks"
+          required />
+      </div>
+      <div class="form-group">
+        <label>Due Date</label>
+        <div class="input-container">
+            <input matInput [matDatepicker]="picker" formControlName="dueDate" placeholder="Enter Due Date" required />
+            <mat-datepicker-toggle matSuffix [for]="picker" class="datepicker-icon"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+    </div>
+    
+      
+      
+      <div class="form-group">
+        <label for="assigningTeamLeaderId">Assigning Team Leader:</label>
+        <input type="text" id="assigningTeamLeaderId" autocomplete="off" placeholder="Select a team leader"
+          [formControlName]="assigningTeamLeaderId" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onTeamLeadChange($event)">
+          <mat-option *ngFor="let tl of nonworkingtl" [value]="tl.tlName">
+            {{ tl.tlName }}
+          </mat-option>
+        </mat-autocomplete>
+      </div>
+
+      <!-- <mat-spinner class="matspinner" *ngIf="isLoadingToSubmitForm"></mat-spinner>
+      <br>
+      <button type="submit" class="submit-button">Submit</button> -->
+
+      <button type="submit" class="submit-button" [disabled]="isLoadingToSubmitForm">
+        <ng-container *ngIf="!isLoadingToSubmitForm">Submit</ng-container>
+        <ng-container *ngIf="isLoadingToSubmitForm">
+          <mat-spinner  class="matspinner" diameter="40"></mat-spinner>
+        </ng-container>
+      </button>
+    </form>
+  </div>

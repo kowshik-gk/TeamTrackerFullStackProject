@@ -1,0 +1,82 @@
+<div class="project-info">
+
+  <mat-spinner class="matspinner" *ngIf="isLoading" style="margin-left: 40% ;"></mat-spinner>
+  <h2>Projects You Were Assigned To TL's</h2>
+  
+  <!-- Pending Projects Section -->
+  <div *ngIf="pendingProjects.length > 0">
+    <h3 style="color:red;">Pending Projects</h3>
+    <div class="project-list">
+      <div class="project-container" *ngFor="let project of pendingProjects">
+        <h4 class="project-name" style="color:red;">{{ project.name }}</h4>
+        <div class="project-details">
+          <div class="detail">
+            <strong>Status:</strong>
+            <span>{{ project.status }}</span>
+          </div>
+          <div class="detail">
+            <strong>Description:</strong>
+            <span>{{ project.description }}</span>
+          </div>
+          <div class="detail">
+            <strong>Assigned TL:</strong>
+            <span>{{ project.assignedTeamLeader }}</span>
+          </div>
+          <div class="detail">
+            <strong>Due Date:</strong>
+            <span>{{ project.dueDate }}</span>
+          </div>
+          <div class="detail">
+            <strong>Number Of Tasks:</strong>
+            <span>{{ project.numberOfTasks }}</span>
+          </div>
+          <div class="detail">
+            <strong>Completed Tasks:</strong>
+            <span>{{ project.completedTasks }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Completed Projects Section -->
+  <div *ngIf="completedProjects.length > 0">
+    <h3 style="color:green;">Completed Projects</h3>
+    <div class="project-list">
+      <div class="project-container" *ngFor="let project of completedProjects">
+        <h4 class="project-name" style="color:green;">{{ project.name }}</h4>
+        <div class="project-details">
+          <div class="detail">
+            <strong>Status:</strong>
+            <span>{{ project.status }}</span>
+          </div>
+          <div class="detail">
+            <strong>Description:</strong>
+            <span>{{ project.description }}</span>
+          </div>
+          <div class="detail">
+            <strong>Assigned TL:</strong>
+            <span>{{ project.assignedTeamLeader }}</span>
+          </div>
+          <div class="detail">
+            <strong>Due Date:</strong>
+            <span>{{ project.dueDate }}</span>
+          </div>
+          <div class="detail">
+            <strong>Number Of Tasks:</strong>
+            <span>{{ project.numberOfTasks }}</span>
+          </div>
+          <div class="detail">
+            <strong>Completed Tasks:</strong>
+            <span>{{ project.completedTasks }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Projects Available Section -->
+  <ng-template #noProjects>
+    <p>No projects available.</p>
+  </ng-template>
+</div>

@@ -1,0 +1,351 @@
+<div class="main-container">
+  <h2>View Projects</h2>
+  <h4>Click Headers To Sort Records</h4>
+  <mat-spinner class="matspinner" *ngIf="isLoading" style="margin-left: 40%;"></mat-spinner>
+    <!-- Completed Projects Table -->
+    <h3>Completed Projects</h3>
+
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <div class="table-actions">
+          <input class="custom-input" (keyup)="applyFilter($event, 'completedProjects')" placeholder="Search projects">
+          <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+        </div>
+      </div>
+    </div>
+
+    <table mat-table [dataSource]="completedProjectsDataSource" matSort #completedProjectsSort="matSort">
+      <ng-container matColumnDef="name">
+        <th style="width:20%;" mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let project"> {{ project.name }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+        <td mat-cell *matCellDef="let project"> {{ project.description }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="numberOfTasks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Number of Tasks </th>
+        <td mat-cell *matCellDef="let project"> {{ project.numberOfTasks }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="completedTasks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Completed Tasks </th>
+        <td mat-cell *matCellDef="let project"> {{ project.completedTasks }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="assignedTeamLeader">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Assigning Team Leader </th>
+        <td mat-cell *matCellDef="let project"> {{ project.assignedTeamLeader }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="createdManager">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created Manager </th>
+        <td mat-cell *matCellDef="let project"> {{ project.createdManager }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </th>
+        <td mat-cell *matCellDef="let project"> {{ project.dueDate }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let project; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteProject(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editProject(i, project)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedProjectColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedProjectColumns;"></tr>
+    </table>
+    <mat-paginator class="mat-paginator" #completedProjectsPaginator [pageSizeOptions]="[5,10,20,100]"
+      aria-label="Select page of projects"></mat-paginator>
+
+    <!-- Current Projects Table -->
+    <h3>Current Projects</h3>
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <input class="custom-input" (keyup)="applyFilter($event, 'currentProjects')" placeholder="Search projects">
+        <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+      </div>
+    </div>
+    <table mat-table [dataSource]="currentProjectsDataSource" matSort #currentProjectsSort="matSort">
+      <ng-container matColumnDef="name">
+        <th style="width:20%; font-weight : bold;" mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let project"> {{ project.name }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+        <td mat-cell *matCellDef="let project"> {{ project.description }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="numberOfTasks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Number of Tasks </th>
+        <td mat-cell *matCellDef="let project"> {{ project.numberOfTasks }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="completedTasks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Completed Tasks </th>
+        <td mat-cell *matCellDef="let project"> {{ project.completedTasks }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="assignedTeamLeader">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Assigning Team Leader </th>
+        <td mat-cell *matCellDef="let project"> {{ project.assignedTeamLeader }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="createdManager">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created Manager </th>
+        <td mat-cell *matCellDef="let project"> {{ project.createdManager }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </th>
+        <td mat-cell *matCellDef="let project"> {{ project.dueDate }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let project; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteCurrentProject(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editCurrentProject(i, project)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedCurrentProjectColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedCurrentProjectColumns;"></tr>
+    </table>
+    <mat-paginator class="mat-paginator" #currentProjectsPaginator [pageSizeOptions]="[5,10,20,100]"
+      aria-label="Select page of current projects"></mat-paginator>
+
+
+
+
+    <!-- Working Team Leaders Table -->
+    <h3>Working Team Leaders</h3>
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <input class="custom-input" (keyup)="applyFilter($event, 'workingTeamLeaders')" placeholder="Search TeamLead">
+        <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+      </div>
+    </div>
+    <table mat-table [dataSource]="workingTeamLeadersDataSource" matSort #workingTeamLeadersSort="matSort" cdkDropList
+      (cdkDropListDropped)="onDrop($event, 'workingToNonWorking')"
+      [cdkDropListData]="workingTeamLeadersDataSource.data">
+
+      <!-- Table Columns -->
+      <ng-container matColumnDef="tlName">
+        <th style="width:20%; font-weight : bold;" mat-header-cell *matHeaderCellDef mat-sort-header> Team Leader Name
+        </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.tlName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="projectName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.projectName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="CreatedManager">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created Manager </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.assignedManager }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let tl; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteWorkingTeamLeader(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editWorkingTeamLeader(i, tl)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedWorkingTeamLeaderColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedWorkingTeamLeaderColumns;" cdkDrag [cdkDragData]="row">
+      </tr>
+    </table>
+    <mat-paginator class="mat-paginator" #workingTeamLeadersPaginator
+      [pageSizeOptions]="[5, 10, 20, 100]"></mat-paginator>
+
+    <!-- Non-Working Team Leaders Table -->
+    <h3>Non-Working Team Leaders</h3>
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <input class="custom-input" (keyup)="applyFilter($event, 'nonWorkingTeamLeaders')"
+          placeholder="Search TeamLead">
+        <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+      </div>
+    </div>
+    <table mat-table [dataSource]="nonWorkingTeamLeadersDataSource" matSort #nonWorkingTeamLeadersSort="matSort"
+      cdkDropList (cdkDropListDropped)="onDrop($event, 'nonWorkingToWorking')"
+      [cdkDropListData]="nonWorkingTeamLeadersDataSource.data">
+
+      <!-- Table Columns -->
+      <ng-container matColumnDef="tlName">
+        <th style="width:20%; font-weight : bold;" mat-header-cell *matHeaderCellDef mat-sort-header> Team Leader Name
+        </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.tlName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="projectName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.projectName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="CreatedManager">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created Manager </th>
+        <td mat-cell *matCellDef="let teamLeader">{{ teamLeader.assignedManager }}</td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let tl; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteNonWorkingTeamLeader(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editNonWorkingTeamLeader(i, tl)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedNonWorkingTeamLeaderColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedNonWorkingTeamLeaderColumns;" cdkDrag [cdkDragData]="row">
+      </tr>
+    </table>
+    <mat-paginator class="mat-paginator" #nonWorkingTeamLeadersPaginator
+      [pageSizeOptions]="[5, 10, 20, 100]"></mat-paginator>
+
+
+
+
+    <!-- Working Employees Table -->
+    <h3>Working Employees</h3>
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <input class="custom-input" (keyup)="applyFilter($event, 'workingEmployees')" placeholder="Search Employee">
+        <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+      </div>
+    </div>
+    <table mat-table [dataSource]="workingEmployeesDataSource" matSort #workingEmployeesSort="matSort">
+      <ng-container matColumnDef="employeeName">
+        <th style="width:20%; font-weight : bold;" mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td (click)="viewEmployee(employee.employeeName)" mat-cell *matCellDef="let employee"> {{ employee.employeeName
+          }} </td>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="taskId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Task ID </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.taskId }} </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="taskName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Task Name </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.taskName }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="projectName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.projectName }} </td>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="projectId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project ID </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.projectId }} </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.dueDate | date }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="createdTL">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created TL </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.createdTL }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let emp; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteWorkingEmployee(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editWorkingEmployee(i, emp)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedWorkingEmployeeColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedWorkingEmployeeColumns;"></tr>
+    </table>
+    <mat-paginator class="mat-paginator" #workingEmployeesPaginator [pageSizeOptions]="[5,10,20,100]"
+      aria-label="Select page of working employees"></mat-paginator>
+
+    <!-- Non-Working Employees Table -->
+    <h3>Non-Working Employees</h3>
+    <div class="input-outlayer">
+      <div class="input-wrapper">
+        <input class="custom-input" (keyup)="applyFilter($event, 'nonWorkingEmployees')" placeholder="Search Employee">
+        <img src="assets/search-icon.png" class="search-icon" alt="Search Icon">
+      </div>
+    </div>
+    <table mat-table [dataSource]="nonWorkingEmployeesDataSource" matSort #nonWorkingEmployeesSort="matSort">
+      <ng-container matColumnDef="employeeName">
+        <th style="width:20%; font-weight : bold;" mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td (click)="viewEmployee(employee.employeeName)" mat-cell *matCellDef="let employee"> {{ employee.employeeName
+          }} </td>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="taskId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Task ID </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.taskId }} </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="taskName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Task Name </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.taskName }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="projectName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.projectName }} </td>
+      </ng-container>
+
+      <!-- <ng-container matColumnDef="projectId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project ID </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.projectId }} </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.dueDate | date }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="createdTL">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created TL </th>
+        <td mat-cell *matCellDef="let employee"> {{ employee.createdTL }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let emp; let i = index">
+          <div class="table-actions">
+            <img src="assets/delete-icon.png" class="action-icon" (click)="deleteNonWorkingEmployee(i)" alt="Delete Icon">
+            <img src="assets/edit-icon.png" class="action-icon" (click)="editNonWorkingEmployee(i, emp)" alt="Edit Icon">
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedNonWorkingEmployeeColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedNonWorkingEmployeeColumns;"></tr>
+    </table>
+    <mat-paginator class="mat-paginator-end" #nonWorkingEmployeesPaginator [pageSizeOptions]="[5,10,20,100]"
+      aria-label="Select page of non-working employees"></mat-paginator>
+</div>

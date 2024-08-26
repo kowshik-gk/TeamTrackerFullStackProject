@@ -1,0 +1,50 @@
+<div class="dialog-content">
+  <h2>User Profile</h2>
+
+  <!-- User Information -->
+  <div class="user-info">
+    <div class="info-table">
+      <div class="info-row">
+        <div class="info-label"><strong>Username:</strong></div>
+        <div class="info-value">{{ userName }}</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label"><strong>Role:</strong></div>
+        <div class="info-value">{{ userRole }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conditional Information -->
+  <div *ngIf="userRole === 'manager'" class="info-section">
+    <h3>Project Overview</h3>
+    <div class="info-table">
+      <div class="info-row">
+        <div class="info-label"><strong>Completed Projects:</strong></div>
+        <div class="info-value">{{ completedProj }}</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label"><strong>Pending Projects:</strong></div>
+        <div class="info-value">{{ pendingProj }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="userRole === 'teamleader'" class="info-section">
+    <h3>Task Overview</h3>
+    <div class="info-table">
+      <div class="info-row">
+        <div class="info-label"><strong>Completed Tasks:</strong></div>
+        <div class="info-value">{{ completedTask }}</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label"><strong>Pending Tasks:</strong></div>
+        <div class="info-value">{{ pendingTask }}</div>
+      </div>
+    </div>
+  </div><br>
+  
+  <button class="dialog-close" mat-button (click)="onClose()">Close</button>
+
+
+</div>

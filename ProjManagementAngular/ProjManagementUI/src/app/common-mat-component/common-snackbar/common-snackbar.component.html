@@ -1,0 +1,36 @@
+<!-- common-snackbar.component.html -->
+<div class="main-container">
+
+  <img *ngIf="data.isSuccess" src="/assets/success-icon.png" alt="Success Icon" class="snackbar-icon">
+  <img *ngIf="!data.isSuccess" src="/assets/warning-icon.png" alt="Warning Icon" class="snackbar-icon">
+  
+  <span class="message-content">
+    {{ data.message }}
+  </span>
+  
+  <span matSnackBarActions>
+    <img src="/assets/close-window-icon.png" alt="Close Icon" class="snackbar-icon"
+      (click)="snackBarRef.dismissWithAction()"
+      class="snackbar-button" 
+    />
+  </span>
+</div>
+
+<!-- 
+  <img *ngIf="data.isSuccess" src="/assets/icons8-success-30.png" alt="Success Icon" class="snackbar-icon">
+  <img *ngIf="!data.isSuccess" src="/assets/warning-icon.png" alt="Warning Icon" class="snackbar-icon">
+  
+  <span class="message-content">
+    {{ data.message }}
+  </span>
+  
+  <span matSnackBarActions>
+
+    <button mat-button matSnackBarAction 
+      (click)="snackBarRef.dismissWithAction()"
+      class="snackbar-button" 
+      [ngStyle]="{'background-color': getBackgroundColor()}">
+      Close
+    </button>
+  </span>
+</div> -->

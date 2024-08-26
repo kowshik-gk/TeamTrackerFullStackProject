@@ -1,0 +1,36 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  padding: 10px;
+}
+
+.snackbar-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.snackbar-button { 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 2%;
+  padding: 8px;
+}
+
+.snackbar-button:hover {
+  font-size: 1.2em;
+}
+
+.message-content {
+  margin: 2%;
+  margin-left: 5%;
+  font-size: 1.2em;
+}
+
+h2 {
+  margin: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
